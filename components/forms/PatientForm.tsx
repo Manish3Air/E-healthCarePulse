@@ -41,6 +41,8 @@ export const PatientForm = () => {
 
       if (newUser) {
         router.push(`/patients/${newUser.$id}/register`);
+      } else{
+        alert("Appointment already exist");
       }
     } catch (error) {
       console.log(error);
